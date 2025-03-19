@@ -1,0 +1,19 @@
+CREATE DATABASE Escola;
+
+use Escola;
+
+use Escola;
+CREATE TABLE Alunos(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    Nome VARCHAR(100) NOT NULL,
+    Email VARCHAR(100)UNIQUE NOT NULL,
+    Data_nascimento DATE NOT NULL,
+    Curso VARCHAR(100)NOT NULL,
+    Nota FLOAT
+    
+  );  
+INSERT INTO Alunos (nome,email,Data_nascimento,curso,nota) 
+VALUES ('jão silva','jao@email.com','200-05-15','Engenharia',8.5),
+('Maria Souza','maria@email.com','1998-09-22','Medicina',9.2),
+('Carlos Pereira','carlos@email.com','2001-03-10','Direito',7.8),
+('Ana Oliveira','ana@email.com','1999-07-19','Engenharia',6.9),
